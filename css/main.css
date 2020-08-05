@@ -34,29 +34,36 @@ p {
     margin: 0 auto;
     width: 1150px;
 }
+.hero__container  {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    min-height: 567px;
+}
 .header {
-    height: 120px;
-    position: relative;
-    margin-bottom:118px;   
+    padding-top: 17px;
+    margin-bottom:30px; 
+    display: flex;
+    justify-content:space-between;  
+    align-items: center;    
+}
+.header__col {
+    display: flex;
+    align-items: center;
+
+}
+.header__col-align--right {
+    justify-content:flex-end;
+
 }
 .logo {
     display: block;
-    position: absolute;
-    top:  21px;
-    left: 4px;
-    width: 198px;
-    height: 46px;
+    margin-right: 200px;
+    margin-top: 4px;
 }
-.menu {
-    
-    position: absolute;
-    top: 34px;
-    left: 442px;
-}
+
 .contacts {
-    position: absolute;
-    top:18px;
-    right: 0px;
+   
     font-size: 26px;
 }
 
@@ -95,7 +102,7 @@ p {
     line-height: 125%;
 }
 .hero__text-section {
-    width: 776px;
+    width: 66%;
     min-height: 197px; 
     margin-left: 200px;
 }
@@ -107,8 +114,7 @@ p {
     font-weight: 800;
     font-size: 70px;
     line-height: 98px;
-    text-transform: uppercase;
-
+    text-transform: uppercase;   
 }
 .hero__title--subtitle {
     font-size: 18px;
@@ -147,16 +153,18 @@ p {
 .servis {
     margin-bottom: 180px;
 }
+.offers {
+    display: flex;
+    justify-content:space-between;
+}
 .offers__item {
     min-height: 476px;
-    width: 352px;
+    width: calc(100% / 3 - 18px);
     background: #ffffff;
-    border-radius: 4px;
-    display: inline-block;
-    margin-right: 30px;
+    border-radius: 4px;     
     margin-top: 243px;
-    vertical-align: top;
-    margin-left: 8px; 
+    
+    
 }
 .offers__item:last-child {
 margin-right: 0;
