@@ -27,6 +27,16 @@ p {
 *{
     box-sizing: border-box;
 }
+.body, html {
+    height: 100%;
+}
+.wrapper {
+    display: flex;
+    flex-direction:column;
+    min-height: 100%;
+    overflow: hidden;
+    min-width: 1200px;
+}
 .main-pege-wrapper {
     background: url(../img/hero.jpg) center top no-repeat, url(../img/bottom-pic.jpg) center bottom 300px no-repeat ;
 }
@@ -135,8 +145,10 @@ p {
     line-height: 19px;
     font-weight: bold;
     text-transform: uppercase;
-    text-decoration: none;    
-    display: inline-block;
+    text-decoration: none;
+   
+   
+   
     
 }
 .btn:hover {
@@ -151,47 +163,55 @@ p {
    
 }
 .servis {
-    margin-bottom: 180px;
+    margin-bottom: 142px;
 }
 .offers {
     display: flex;
     justify-content:space-between;
-}
-.offers__item {
-    min-height: 476px;
-    width: calc(100% / 3 - 18px);
-    background: #ffffff;
-    border-radius: 4px;     
     margin-top: 243px;
-    
-    
+}
+.offer {
+    border-radius: 4px;   
+    background: #ffffff;
+    min-height: 476px;  
+    display: flex;
+    flex-direction: column;
+   
+      
+}
+.offers__item {  
+    width: calc(100% / 3 - 18px); 
+   
 }
 .offers__item:last-child {
 margin-right: 0;
 }
 .offers__header {
-    min-height: 146px; 
-    padding: 30px 30px;
-
+    min-height: 133px; 
+    padding: 31px 0 0 35px;
+    
 }
 .offers__content {
     color: #000;
-    padding-left: 30px;
+    padding-left: 30px;  
+   
 }
+    
    
 .offers__title {
     font-weight: bold;
     font-size: 32px;
-    line-height: 44px;
-    margin-bottom: 8px;
-    margin-left: 0px;
+    line-height: 44px;    
+    margin-bottom: 23px;
    
 }
-.offers__conditions--time {
-    display: inline-block;
-    vertical-align: top;
-    width: 140px;
-    margin-right: 20px;
+.offers__conditions {
+    display: flex;
+    
+    
+}
+.offers__conditions--time {   
+    width: 140px; 
     font-size: 16px;
     line-height: 125%;
 }
@@ -200,6 +220,7 @@ margin-right: 0;
 }
 .offers__text {
     margin-top: 20px;
+    margin-bottom: 56px;
 }
 .coll {
     font-weight: bold;
@@ -208,17 +229,26 @@ margin-right: 0;
     font-size: 37px;
     font-weight: bold;
     text-transform: uppercase;
-    margin-top: 142px;
+    margin-top: 0px;
 
 }
-.news__item {
-    width: 557px;
-    display:inline-block;
-    vertical-align: top;
+.news {   
+    display: flex;
+    justify-content:space-between;
+}
+.news__item {  
+    margin-top: 53px;
+    flex: 1; 
+    margin-right: 2%;     
+}
+.news__item:last-child {
+    margin-right:  0;
+}
+.single-news {
     position: relative;
     border-radius: 4px;
     overflow: hidden;
-    margin-top: 50px;    
+    
 }
 .news__cover {
     width: 100%;
@@ -226,7 +256,7 @@ margin-right: 0;
     object-fit: cover;
     opacity: .4;
 }
-.news__text-content {
+.single-news__text-content {
     position: absolute;
     left: 0;
     right: 0;
@@ -235,23 +265,25 @@ margin-right: 0;
     min-height: 140px;
     
 }
-.news__date {
+.single-news__date {
     font-size: 15px;
     margin-bottom: 18px;
 
 }
-.news__title {
+.single-news__title {
     font-size: 24px;
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
 }
 .pager {
-    text-align: center;  
-    margin-top: 34px;  
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 27px;
 }
-.pager__display, .pager__list {
-    display: inline-block;
-    vertical-align: middle;    
+.pager__list {
+     display: flex;
+     align-items: center;
 
 }
 .pager__display {
@@ -259,8 +291,7 @@ margin-right: 0;
     margin-top: 31px;
 }
 .pager__item {
-    display: inline-block;
-    vertical-align: middle; 
+    text-align: center;
     
 }
 .pager__item .pager__item--active {
@@ -281,10 +312,11 @@ margin-right: 0;
 }
 .about {
     margin-top: 156px;
+    display: flex;
+
 }
 .about::before, .about__desc {
-    display:inline-block;
-    vertical-align: top;
+    
     border-radius: 4px;
 }
 .about::before {
@@ -292,12 +324,12 @@ margin-right: 0;
     width: 494px;
     height: 502px;
     background: url(../img/cameraman.jpg) center center / cover no-repeat;
-    
+    display: block;
 }
 .about__desc {
     background: #ffffff;
     padding: 80px 98px; 
-    width: 778px;
+    max-width: 778px;
     margin-top: 94px;
     margin-left: -131px;
 }
@@ -319,7 +351,7 @@ margin-right: 0;
     margin-bottom: 0;
 }
 .footer-container {
-    margin-top: 72px;      
+    margin-top:auto;      
 }
     
 
@@ -329,7 +361,18 @@ margin-right: 0;
 .footer {
     height: 152px;
     position: relative;
-    margin-top: 23px;
+    margin-top: 95px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+
+}
+.footer__col {
+    display: flex;
+    align-items: center;
+}
+.footer__col--aligen-right {
+    align-items:flex-end;
 }
 .contacts__desc {
     color: #ffffff;
@@ -337,15 +380,12 @@ margin-right: 0;
     line-height: 125%;
 }
 .menu-footer{   
-    position: absolute;
-    top: 33px;
+    position: absolute;   
     left: 299px;
 }
 
 .socials {
-    top: 28px;
-    right: 253px;
-    position: absolute;
+    margin-right: 74px;
 }
 .socials__item {
     display: inline-block;
