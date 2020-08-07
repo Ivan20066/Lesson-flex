@@ -184,19 +184,10 @@ p {
 .offers__item:last-child {
 margin-right: 0;
 }
-.offers__header {
-    
-    
-    
-}
+
 .offers__content {
-    color: #000;
-    
-   
-    
-   
-}
-    
+    color: #000;     
+}    
    
 .offers__title {
     font-weight: bold;
@@ -206,8 +197,7 @@ margin-right: 0;
     margin-top: 20px;
 }
 .offers__conditions {
-    display: flex;
-    
+    display: flex;    
     
 }
 .offers__conditions--time {   
@@ -353,13 +343,7 @@ margin-right: 0;
     margin-bottom: 0;
 }
 .footer-container {
-    margin-top:auto; 
-    
-}
-    
-
-.footer-container__content {
-    
+    margin-top:auto;     
 }   
 .footer {
     height: 135px;
