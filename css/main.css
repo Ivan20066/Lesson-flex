@@ -329,15 +329,16 @@ margin-right: 0;
 }
 .about__desc {
     background: #ffffff;
-    padding: 80px 98px; 
+    padding: 70px 0 0 98px; 
     max-width: 778px;
-    margin-top: 94px;
+    min-height: 460px;
+    margin-top: 105px;
     margin-left: -131px;
 }
 .about__title {
     font-weight: bold;
     font-size: 36px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     color: #000;
     text-transform: uppercase;
 }
@@ -346,7 +347,7 @@ margin-right: 0;
     color: #000;
 }
 .about__desc-text p {
-    margin-bottom: 20px;
+    margin-bottom: 121px;
 }
 .about__desc-text p :last-child {
     margin-bottom: 0;
@@ -362,7 +363,7 @@ margin-right: 0;
 .footer {
     height: 152px;
     position: relative;
-    margin-top: 95px;
+    margin-top: 33px;
     display: flex;
     justify-content:space-between;
     align-items: center;
