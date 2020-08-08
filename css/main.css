@@ -111,6 +111,7 @@ p {
     width: 66%;
     min-height: 197px; 
     margin-left: 200px;
+    text-align: center;
 }
 .hero__title {
    
@@ -125,11 +126,8 @@ p {
 .hero__title--subtitle {
     font-size: 18px;
     margin-bottom: 77px;
-    margin-left: 182px;
 }
-.btn-hero {
-    margin-left: 282px;
-}
+
 .btn {
     background: #FF5500;
     border-radius: 35px;
@@ -226,9 +224,9 @@ margin-right: 0;
 .news {   
     display: flex;
     justify-content:space-between;
-}
-.news__item {  
     margin-top: 53px;
+}
+.news__item {      
     flex: 1; 
     margin-right: 2%;     
 }
@@ -380,7 +378,8 @@ margin-right: 0;
     
     margin-right: 8px;
 }
-.socials__item :last-child {
+
+.socials__item:last-child {
     margin-right: 0;
 }
 .socials__link {
