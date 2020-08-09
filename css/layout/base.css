@@ -48,7 +48,7 @@ p {
 }
 
 .main-pege-wrapper {
-    background: url(../img/hero.jpg) center top no-repeat, url(../img/bottom-pic.jpg) center bottom 300px no-repeat ;
+    background: url(/img/hero.jpg) center top no-repeat, url(/img/bottom-pic.jpg) center bottom 300px no-repeat ;
 }
 .container {
     margin: 0 auto;
