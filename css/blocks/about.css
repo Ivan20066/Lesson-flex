@@ -11,7 +11,7 @@
     content: "";    
     width: 494px;
     height: 502px;
-    background: url(/img/cameraman.jpg) center center / cover no-repeat;
+    background: url(../../img/cameraman.jpg) center center / cover no-repeat;
     display: block;
 }
 .about__desc {
