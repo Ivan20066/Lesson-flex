@@ -18,15 +18,15 @@
     height: 36px;
     background: center center no-repeat;
 }
- .socials__item-icon-insta, .social__link {
-    background-image: url(../img/in2.png);
+ .socials__item-icon-insta {
+    background: url(../../img/in2.png);
 }
- .socials__item-icon-fb, .social__link {
-    background-image: url(../img/f2.png);
+  .socials__item-icon-fb {
+    background: url(../../img/f2.png);
 }
- .socials__item-icon-vk, .social__link {
-    background-image: url(../img/vk2.png);
+ .socials__item-icon-vk {
+    background: url(../../img/vk2.png);
 }
-.socials__item-icon-telegram, .social__link {
-    background-image: url(../img/t2.png);
+.socials__item-icon-telegram {
+    background: url(../../img/t2.png);
 }
