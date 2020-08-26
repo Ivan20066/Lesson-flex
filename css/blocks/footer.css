@@ -1,28 +1,23 @@
 .footer-container {
     margin-top:auto;     
-}   
+} 
+
+
+.footer--col-left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}  
 .footer {
-    height: 135px;
-    position: relative;
+    height: 135px;    
     margin-top: 40px;
     display: flex;
     justify-content:space-between;
     align-items: center;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
-.footer__col{
-    display: flex;
-    align-items: center;
-}
-
-.footer__col--aligen-right {
-    justify-content:flex-end;
-}
 .contacts__desc {
     color: #ffffff;
     font-size: 11px;
     line-height: 125%;
-}
-.menu-footer {
-    margin-left: 68px;
 }

@@ -1,11 +1,12 @@
 .servis {
-    margin-bottom: 142px;
+    margin-bottom: 128px;
+    margin-top: 247px;
 }
 .offers {
     display: flex;
     justify-content:space-between;
     
-    margin-top: 243px;
+    
 }
 .offer {
     border-radius: 4px;   

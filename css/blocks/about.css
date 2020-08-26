@@ -1,5 +1,5 @@
 .about {
-    margin-top: 156px;
+   
     display: flex;
 
 }
@@ -16,11 +16,11 @@
 }
 .about__desc {
     background: #ffffff;
-    padding: 70px 0 0 98px; 
+    padding: 70px  98px; 
     max-width: 778px;
     min-height: 460px;
-    margin-top: 105px;
-    margin-left: -131px;
+    margin-top: 118px;
+    margin-left: -127px;
 }
 .about__title {
     font-weight: bold;
@@ -30,7 +30,7 @@
     text-transform: uppercase;
 }
 .about__desc-text {
-    margin-bottom: 42px;
+    margin-bottom: 121px;
     color: #000;
 }
 .about__desc-text p {
@@ -38,4 +38,10 @@
 }
 .about__desc-text p :last-child {
     margin-bottom: 0;
+}
+.cection__about {
+    margin-top: 139px;
+}
+.btn__about {
+    padding: 16px 39px;
 }
